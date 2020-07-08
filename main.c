@@ -21,7 +21,6 @@ int main(int argc, char* argv[]){
     else if(argc == 4){
         char genKey[strlen(argv[2]) + 1];
         makeKey(strlen(argv[2]), argv[3], genKey);
-        printf("%s", genKey);
         if(strcmp(argv[1], "--enc") == 0){
             encryptText(argv[2], genKey);
         }
